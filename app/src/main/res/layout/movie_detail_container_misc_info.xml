@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/movieDetailContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_movie_misc_info"
+        android:layout_width="@dimen/movie_detail_icon_dimen"
+        android:layout_height="@dimen/movie_detail_icon_dimen"
+        android:layout_margin="@dimen/movie_detail_icon_margin"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/movie_plot_icon"
+        android:src="@drawable/svg_cinema_seat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_runtime_static_text"
+        style="@style/movieDetailTitle"
+        android:layout_marginStart="16dp"
+        android:text="@string/runtime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_runtime"
+        style="@style/movieDetailDescription"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_runtime_static_text"
+        app:layout_constraintStart_toEndOf="@id/tv_runtime_static_text"
+        app:layout_constraintTop_toTopOf="@id/tv_runtime_static_text"
+        tools:text="175 min" />
+
+    <TextView
+        android:id="@+id/tv_released_static_text"
+        style="@style/movieDetailTitle"
+        android:text="@string/released"
+        app:layout_constraintStart_toStartOf="@+id/tv_runtime_static_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_runtime" />
+
+    <TextView
+        android:id="@+id/tv_released"
+        style="@style/movieDetailDescription"
+        app:layout_constraintBottom_toBottomOf="@id/tv_released_static_text"
+        app:layout_constraintStart_toStartOf="@id/tv_runtime"
+        app:layout_constraintTop_toTopOf="@id/tv_released_static_text"
+        tools:text="14 March 2007" />
+
+    <TextView
+        android:id="@+id/tv_country_static_text"
+        style="@style/movieDetailTitle"
+        android:layout_marginBottom="16dp"
+        android:text="@string/country"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_runtime_static_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_released" />
+
+    <TextView
+        android:id="@+id/tv_country"
+        style="@style/movieDetailDescription"
+        app:layout_constraintBottom_toBottomOf="@id/tv_country_static_text"
+        app:layout_constraintStart_toStartOf="@id/tv_runtime"
+        app:layout_constraintTop_toTopOf="@id/tv_country_static_text"
+        tools:text="US, UK" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

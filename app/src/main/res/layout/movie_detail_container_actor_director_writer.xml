@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/movieDetailContainer"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_actor_director_writer_icon"
+        android:layout_width="@dimen/movie_detail_icon_dimen"
+        android:layout_height="@dimen/movie_detail_icon_dimen"
+        android:layout_marginStart="@dimen/movie_detail_icon_margin"
+        android:contentDescription="@string/director_writer_actor_icon"
+        android:src="@drawable/svg_director_chair"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_actors_static_text"
+        style="@style/movieDetailTitle"
+        android:layout_marginStart="32dp"
+        android:text="@string/actors"
+        app:layout_constraintStart_toEndOf="@id/iv_actor_director_writer_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_actors"
+        style="@style/movieDetailDescription"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_actors_static_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_actors_static_text"
+        tools:text="Morgan Freeman\nAl Pacino\nEmelia Clark" />
+
+    <TextView
+        android:id="@+id/tv_director_static_text"
+        style="@style/movieDetailTitle"
+        android:text="@string/director"
+        app:layout_constraintStart_toStartOf="@id/tv_actors_static_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_actors" />
+
+    <TextView
+        android:id="@+id/tv_director"
+        style="@style/movieDetailDescription"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_actors"
+        app:layout_constraintTop_toBottomOf="@id/tv_director_static_text"
+        tools:text="Christopher Nolan" />
+
+    <TextView
+        android:id="@+id/tv_writer_static_text"
+        style="@style/movieDetailTitle"
+        android:text="@string/writer"
+        app:layout_constraintStart_toStartOf="@id/tv_actors_static_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_director" />
+
+    <TextView
+        android:id="@+id/tv_writer"
+        style="@style/movieDetailDescription"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_actors"
+        app:layout_constraintTop_toBottomOf="@id/tv_writer_static_text"
+        tools:text="Stephen King (short story &quot;Rita Hayworth and Shawshank Redemption&quot;), Frank Darabont (screenplay)" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

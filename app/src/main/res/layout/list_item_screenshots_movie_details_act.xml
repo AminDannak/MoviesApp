@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_height="300dp">
+
+    <ImageView
+        android:id="@+id/iv_movie_screenshot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/movie_screenshots"
+        android:scaleType="fitCenter"
+        android:padding="64dp"
+
+
+        tools:src="@drawable/svg_film_reel" />
+    <!--    tools:minWidth="0dp"-->
+    <!--    tools:padding="0dp"-->
+    <!--    tools:scaleType="center"-->
+    <!--    tools:src="@drawable/shawshank"-->
+
+
+</FrameLayout>

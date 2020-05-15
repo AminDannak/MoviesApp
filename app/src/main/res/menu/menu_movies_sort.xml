@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:icon="@drawable/svg_sort_down"
+        android:title="@string/sort"
+        app:showAsAction="ifRoom"
+        tools:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/item_sort_imdb_desc"
+                android:title="@string/sort_by_imdb_rating" />
+            <item
+                android:id="@+id/item_sort_year_descending"
+                android:title="@string/sort_by_year_descending" />
+            <item
+                android:id="@+id/item_sort_year_ascending"
+                android:title="@string/sort_by_year_ascending" />
+        </menu>
+    </item>
+
+
+</menu>
