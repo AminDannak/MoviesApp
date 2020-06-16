@@ -23,6 +23,7 @@ I developed this app with these goals in mind:
 * Retrofit Library
 * Paging Library
 * Glide Library
+* Multithreading
 * Animations
 
 
